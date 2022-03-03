@@ -1,0 +1,22 @@
+{
+  "name": "trajectory-reconstruction",
+  "short_name": "trajectory-reconstruction",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "static/Green_bot_sprite_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "static/Green_bot_sprite_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "categories": ["games", "entertainment"]
+}

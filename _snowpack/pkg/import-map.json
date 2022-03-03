@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "hls.js": "./hlsjs.js",
+    "jsonld": "./jsonld.js",
+    "threads/observable": "./threads/observable.js",
+    "threads/worker": "./threads/worker.js",
+    "three": "./three.js"
+  }
+}

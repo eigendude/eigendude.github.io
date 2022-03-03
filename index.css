@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+#videoBackground {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+#renderCanvas,
+#overlayCanvas2D,
+#overlayCanvas3D {
+  position: fixed;
+}
+#volumeDownIcon,
+#volumeMuteIcon,
+#volumeOffIcon,
+#volumeUpIcon {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 128px;
+  height: 128px;
+}
+#enterFullscreenIcon,
+#leaveFullscreenIcon {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 128px;
+  height: 128px;
+}
+#viewOverlayIcon,
+#hideOverlayIcon {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  width: 128px;
+  height: 128px;
+}
+body {
+  background-color: black;
+  font-family: Sans-Serif;
+}
+#videoBackground {
+  object-fit: cover;
+}
+#renderCanvas,
+#overlayCanvas2D,
+#overlayCanvas3D {
+  display: none;
+}
+#volumeDownIcon,
+#volumeMuteIcon,
+#volumeOffIcon,
+#volumeUpIcon {
+  display: none;
+  opacity: 0.5;
+}
+#enterFullscreenIcon,
+#leaveFullscreenIcon {
+  display: none;
+  opacity: 0.5;
+}
+#viewOverlayIcon,
+#hideOverlayIcon {
+  display: none;
+  opacity: 0.5;
+}
+#volumeDownIcon,
+#volumeMuteIcon,
+#volumeOffIcon,
+#volumeUpIcon {
+  cursor: pointer;
+}
+#enterFullscreenIcon,
+#leaveFullscreenIcon {
+  cursor: pointer;
+}
+#viewOverlayIcon,
+#hideOverlayIcon {
+  cursor: pointer;
+}
