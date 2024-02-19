@@ -1,0 +1,4 @@
+# Generated files (TODO: Better ignore strategy)
+motion_tracker.js
+motion_tracker.wasm
+motion_tracker.wasm.map

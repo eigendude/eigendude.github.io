@@ -1,10 +1,17 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"><head>
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  prefix="og: http://ogp.me/ns#"
+  lang="en-US"
+  xml:lang="en-US"
+>
+  <head>
     <title>trajectory-reconstruction</title>
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <!-- Open Graph metadata -->
-    <meta property="og:type" content="game">
+    <meta property="og:type" content="game" />
 
     <!--
       TODO: Implement viewporting
@@ -15,7 +22,7 @@
       In Safari, float the status bar on top of full screen content, rather
       than pushing it down
     -->
-    <meta name="apple-mobile-web-app-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-style" content="black-translucent" />
 
     <!--
       Link the favicon
@@ -23,17 +30,22 @@
       License: CC-BY-4.0
       URL: https://icon-icons.com/icon/Target/84245
     -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <!--
       Link the web app manifest for usage as a Progressive Web App (PWA)
     -->
-    <link rel="manifest" type="application/manifest+json" href="manifest.json">
+    <link
+      rel="manifest"
+      type="application/manifest+json"
+      href="manifest.json"
+    />
 
     <!--
       Import CSS
     -->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="module" crossorigin src="/assets/index-CrI8oRwl.js"></script>
   </head>
   <body>
     <!--
@@ -44,8 +56,8 @@
       SPDX-License-Identifier: CC-BY-3.0
       https://vimeo.com/346085933
     -->
-    <video id="videoBackground" autoplay="" muted="" loop="">
-      <source src="static/Floating_dust.mp4" type="video/mp4">
+    <video id="videoBackground" autoplay muted loop>
+      <source src="static/Floating_dust.mp4" type="video/mp4" />
     </video>
     <canvas id="renderCanvas"></canvas>
     <canvas id="overlayCanvas2D"></canvas>
@@ -55,21 +67,45 @@
       UI
     -->
     <!-- TODO: https://icons.getbootstrap.com/icons/volume-down-fill/ -->
-    <img id="volumeDownIcon" src="static/volume-down-solid.svg" alt="Low volume">
+    <img
+      id="volumeDownIcon"
+      src="static/volume-down-solid.svg"
+      alt="Low volume"
+    />
     <!-- TODO: https://icons.getbootstrap.com/icons/volume-mute-fill/ -->
-    <img id="volumeMuteIcon" src="static/volume-mute-solid.svg" alt="Muted">
+    <img id="volumeMuteIcon" src="static/volume-mute-solid.svg" alt="Muted" />
     <!-- TODO: https://icons.getbootstrap.com/icons/volume-off-fill/ -->
-    <img id="volumeOffIcon" src="static/volume-off-solid.svg" alt="Volume off">
+    <img
+      id="volumeOffIcon"
+      src="static/volume-off-solid.svg"
+      alt="Volume off"
+    />
     <!-- TODO: https://icons.getbootstrap.com/icons/volume-up-fill/ -->
-    <img id="volumeUpIcon" src="static/volume-up-solid.svg" alt="High volume">
+    <img id="volumeUpIcon" src="static/volume-up-solid.svg" alt="High volume" />
     <!-- TODO: https://icons.getbootstrap.com/icons/fullscreen/ -->
-    <img id="enterFullscreenIcon" src="static/arrows-alt-solid.svg" alt="Enter fullscreen">
+    <img
+      id="enterFullscreenIcon"
+      src="static/arrows-alt-solid.svg"
+      alt="Enter fullscreen"
+    />
     <!-- TODO: https://icons.getbootstrap.com/icons/fullscreen-exit/ -->
-    <img id="leaveFullscreenIcon" src="static/compress-arrows-alt-solid.svg" alt="Leave fullscreen">
+    <img
+      id="leaveFullscreenIcon"
+      src="static/compress-arrows-alt-solid.svg"
+      alt="Leave fullscreen"
+    />
     <!-- TODO: https://icons.getbootstrap.com/icons/eye-fill/ -->
-    <img id="viewOverlayIcon" src="static/Eye_open_font_awesome.svg" alt="View overlay">
+    <img
+      id="viewOverlayIcon"
+      src="static/Eye_open_font_awesome.svg"
+      alt="View overlay"
+    />
     <!-- TODO: https://icons.getbootstrap.com/icons/eye-slash-fill/ -->
-    <img id="hideOverlayIcon" src="static/Eye_close_font_awesome.svg" alt="Hide overlay">
+    <img
+      id="hideOverlayIcon"
+      src="static/Eye_close_font_awesome.svg"
+      alt="Hide overlay"
+    />
 
     <!--
       Motion tracking configuration
@@ -79,7 +115,5 @@
     <input type="number" id="frameHistoryCount" min="1" max="50" />
     -->
 
-    <script type="module" src="_dist_/index.js"></script>
-  
-
-</body></html>
+  </body>
+</html>
